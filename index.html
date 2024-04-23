@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoring Tanaman Otomatis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Monitoring Tanaman Otomatis</h1>
+        <button id="btn-keluar">Keluar</button>
+    </header>
+    <div class="container">
+        <div class="sensor-data">
+            <h2>Data Sensor</h2>
+            <p>Kelembaban Tanah: <span id="kelembaban">-</span></p>
+            <p>Status Tanah: <span id="status-tanah">-</span></p>
+            <p>Penyiraman Hari Ini: <span id="penyiraman-hari-ini">-</span></p>
+        </div>
+        <div class="controls">
+            <h2>Kendali Penyiraman Air</h2>
+            <button id="btn-manual-penyiraman" class="manual-control"><span id="status-penyiraman">Otomatis</span></button>
+        </div>
+        <div class="controls">
+            <h2>Kendali Penyemprotan Pestisida</h2>
+            <button id="btn-manual-pestisida" class="manual-control"><span id="status-pestisida">Otomatis</span></button>
+        </div>
+        <div class="jadwal">
+            <h2>Jadwal Pestisida Otomatis</h2>
+            <input type="time" id="jadwal-pestisida">
+            <select id="hari-pestisida">
+                <option value="senin">Senin</option>
+                <option value="selasa">Selasa</option>
+                <option value="rabu">Rabu</option>
+                <option value="kamis">Kamis</option>
+                <option value="jumat">Jumat</option>
+                <option value="sabtu">Sabtu</option>
+            </select>
+            <button id="btn-set-jadwal">Atur Jadwal</button>
+        </div>        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
